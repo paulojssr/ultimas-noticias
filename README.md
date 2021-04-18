@@ -7,7 +7,7 @@ Configuração do projeto
 -----------------------
 
 
-####Versão do Selenium
+#### Versão do Selenium ####
 
 
 [Repositório Maven: selenium-java](https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java)
@@ -21,7 +21,7 @@ Configuração do projeto
 
 
 
-####Geckodriver
+#### Geckodriver ####
 
 
 * [Releases](https://github.com/mozilla/geckodriver/releases/latest)
