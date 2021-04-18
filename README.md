@@ -27,14 +27,25 @@ Configuração do projeto
 * [Releases](https://github.com/mozilla/geckodriver/releases/latest)
 * [Change log](https://searchfox.org/mozilla-central/source/testing/geckodriver/CHANGES.md)
 
-Configurando a variavel de ambiente *GECKODRIVER* no Linux
+Configurando a variável de ambiente *GECKODRIVER* no Linux
 
-Adicionar ao final do arquivo */etc/profile* a seguinte linha
+Adicionar ao final do arquivo */etc/profile* a seguinte linha:
 
 
-    export GECKODRIVER=/diretorio/geckodriver
+    export GECKODRIVER=/home/usuario/diretorio/geckodriver
 
-Após configuração da variável *GECKODRIVER*, seu valor poderá ser recuperado com codigo
+
+*/home/usuario/diretorio/geckodriver* deve ser substituído pelo caminho do *geckodriver* em sua máquina
+
+
+Após a configuração da variável *GECKODRIVER*, seu valor poderá ser recuperado com codigo
 
 
     System.getenv("GECKODRIVER")
+
+
+Para não visualizar o navegador durante a execução, o seguinte trecho de código deverá ser adicionado:
+
+	FirefoxOptions options = new FirefoxOptions();
+	options.addArguments("--headless");
+	WebDriver driver = new FirefoxDriver(options);

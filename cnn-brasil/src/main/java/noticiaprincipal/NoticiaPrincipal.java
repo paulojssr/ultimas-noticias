@@ -24,9 +24,9 @@ public class NoticiaPrincipal {
 		WebElement elementImg = driver
 				.findElement(By.className("news-item-header__image"));
 		
-		System.out.println("Texto: " + elementH2.getText());
-		System.out.println("Link para a matéria: " + elementA.getAttribute("href"));
-		System.out.println("URL da imagem: " + elementImg.getAttribute("src"));
+		System.out.println("Título: " + elementH2.getText());
+		System.out.println("Link da notícia: " + elementA.getAttribute("href"));
+		System.out.println("Link da imagem: " + elementImg.getAttribute("src"));
 		System.out.println("Título da imagem: " + elementImg.getAttribute("title"));
 		
 		driver.quit();
